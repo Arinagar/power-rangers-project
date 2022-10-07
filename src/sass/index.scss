@@ -1,2 +1,23 @@
+// UTILS
 @import './common';
-@import './example';
+@import './reset';
+@import './vars';
+@import './visually-hidden';
+
+// BASE
+@import './container';
+@import './global';
+
+// COMPONENTS
+@import './btn';
+
+// LAYOUTS
+@import './header';
+@import './hero';
+@import './products';
+@import './about';
+@import './benefits';
+@import './gallery';
+@import './reviews';
+@import './contacts';
+@import './footer';
