@@ -1,23 +1,23 @@
-// UTILS
+// base
 @import './common';
-@import './reset';
-@import './vars';
-@import './visually-hidden';
+@import './utils/reset';
+@import './utils/vars';
+@import './utils/visually-hidden';
 
 // BASE
-@import './container';
-@import './global';
+@import './base/container';
+@import './base/global';
 
 // COMPONENTS
-@import './btn';
+@import './components/btn';
 
 // LAYOUTS
-@import './header';
-@import './hero';
-@import './products';
-@import './about';
-@import './benefits';
-@import './gallery';
-@import './reviews';
-@import './contacts';
-@import './footer';
+@import './base/header';
+@import './base/hero';
+@import './base/products';
+@import './base/about';
+@import './base/benefits';
+@import './base/gallery';
+@import './base/reviews';
+@import './base/contacts';
+@import './base/footer';
