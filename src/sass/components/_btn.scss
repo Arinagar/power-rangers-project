@@ -9,7 +9,7 @@
 //     </div>
 //   </button>
 
-//  <button class="btn btn--ourlocations">
+//  <button class="btn btn--ourlocations" type="button">
 //     Our Locations
 //     <div class="btn_container">
 //       <svg class="btn_icon" width="12" height="12">
@@ -18,7 +18,7 @@
 //     </div>
 //   </button>
 
-// <button class="btn btn--buynow">
+// <button class="btn btn--buynow" type="button">
 //     Buy now
 //     <div class="btn_container">
 //       <svg class="btn_icon" width="12" height="12">
@@ -27,11 +27,11 @@
 //     </div>
 //   </button>
 
-// <button class="btn btn--franchise">Franchise</button>
+// <button class="btn btn--franchise" type="button">Franchise</button>
 
-// <button class="btn btn--products">Products</button>
+// <button class="btn btn--products" type="button">Products</button>
 
-// <button class="btn btn--howmade">How it’s made?</button>
+// <button class="btn btn--howmade" type="button">How it’s made?</button>
 
 @mixin btnFontMod($f-size, $l-height) {
   font-size: $f-size;
