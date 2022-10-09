@@ -1,16 +1,37 @@
 // ========== HTML-коди кнопок з відповідними класами =========
 
-// <button class="btn btn--readmore">Read more</button>
+// <button class="btn btn--readmore">
+//     Read more
+//     <div class="btn_container">
+//       <svg class="btn_icon" width="12" height="12">
+//         <use href="./images/icons.svg#icon-arrow_right"></use>
+//       </svg>
+//     </div>
+//   </button>
 
-// <button class="btn btn--ourlocations">Our Locations</button>
+//  <button class="btn btn--ourlocations" type="button">
+//     Our Locations
+//     <div class="btn_container">
+//       <svg class="btn_icon" width="12" height="12">
+//         <use href="./images/icons.svg#icon-arrow_right"></use>
+//       </svg>
+//     </div>
+//   </button>
 
-// <button class="btn btn--buynow">Buy now</button>
+// <button class="btn btn--buynow" type="button">
+//     Buy now
+//     <div class="btn_container">
+//       <svg class="btn_icon" width="12" height="12">
+//         <use href="./images/icons.svg#icon-arrow_right"></use>
+//       </svg>
+//     </div>
+//   </button>
 
-// <button class="btn btn--franchise">Franchise</button>
+// <button class="btn btn--franchise" type="button">Franchise</button>
 
-// <button class="btn btn--products">Products</button>
+// <button class="btn btn--products" type="button">Products</button>
 
-// <button class="btn btn--howmade">How it’s made?</button>
+// <button class="btn btn--howmade" type="button">How it’s made?</button>
 
 @mixin btnFontMod($f-size, $l-height) {
   font-size: $f-size;
@@ -32,8 +53,9 @@
 .btn {
   @include btnFontMod(14px, 1.29);
   @include btnLookMod(#f8d24e, #f8d24e, 10px);
-  height: 42px;
+
   padding: 0 0 0 32px;
+  height: 42px;
   display: flex;
   align-items: center;
   font-family: sans-serif;
@@ -56,13 +78,26 @@
   }
 }
 
+.btn_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btn_icon {
+  position: absolute;
+  right: 0;
+  transform: translateX(17px);
+  fill: currentColor;
+}
+
 .btn--readmore {
   padding-right: 49px;
 }
 
 .btn--ourlocations {
   min-width: 196px;
-  max-width: 196px;  
+  max-width: 196px;
   padding-left: 34px;
 }
 
