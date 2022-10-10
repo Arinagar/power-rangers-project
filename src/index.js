@@ -1,1 +1,1 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import './js/swiper-reviews';

@@ -126,3 +126,11 @@ reviews_container_three {
 #button3:checked ~ #hw3 {
   background: $primary_b-c;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-pagination-bullet {
+}
