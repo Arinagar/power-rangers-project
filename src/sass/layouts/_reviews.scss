@@ -1,20 +1,51 @@
 .reviews {
   outline: 3px solid tomato;
+  @media screen and (max-width: 767.98px) {
+    background: linear-gradient($primary_b-c 9%, $transparent_b-c 9%);
+  }
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient($primary_b-c 23%, $transparent_b-c 23%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient($primary_b-c 15%, $transparent_b-c 15%);
+  }
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .gallery {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 80px;
-  position: relative;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
 
 .gallery_card {
-  position: absolute;
+  @media screen and (max-width: 767.98px) {
+    border-radius: 8px;
+  }
 
-  bottom: -35px;
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
 }
-.reviews_container {
+
+.reviews_container_one,
+reviews_container_two,
+reviews_container_three {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,11 +64,20 @@
 .reviews_opinion {
   margin: 30px auto;
   padding: 34px 39px;
-  max-width: 280px;
+  min-width: 280px;
 
   background: $primary_b-c;
   border-radius: 10px;
   color: $text-wh;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 24px;
+    width: 705px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+  }
 }
 
 .reviews_text {
@@ -50,4 +90,39 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.85;
+}
+
+// BUTTONS SLIDER
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio input {
+  display: none;
+}
+.radio label {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  background: $slider_btn;
+  cursor: pointer;
+
+  @media screen and (max-width: 767.98px) {
+    margin-top: 14px;
+  }
+  margin-top: 32px;
+}
+.radio label:not(:last-child) {
+  margin-right: 18px;
+}
+
+#button1:checked ~ #hw1,
+#button2:checked ~ #hw2,
+#button3:checked ~ #hw3 {
+  background: $primary_b-c;
 }

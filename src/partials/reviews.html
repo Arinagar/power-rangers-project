@@ -1,18 +1,79 @@
 <section class="reviews section">
   <div class="gallery container">
-    <img
-      src="./images/portfolio/portfolio1_sm-@1x_result.jpg"
-      alt="A lot of ice cream"
-      class="gallery_card"
-    />
-  </div>
-  <div class="reviews_container container">
-    <div class="reviews_photo">
-      <img
-        src="./images/review/review1_sm-@1x_result.jpg"
-        alt="Girl"
-        class="reviews_image"
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/portfolio/portfolio1_lg-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_lg-@2x_result.jpg 2x
+        "
+        type="image/jpg"
       />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/portfolio/portfolio1_md-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_md-@2x_result.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/portfolio/portfolio1_sm-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_sm-@2x_result.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="gallery_card"
+        src="./images/portfolio/portfolio1_sm-@1x_result.jpg"
+        alt="A lot of ice cream"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <!-- REVIEW 1 -->
+  <div class="reviews_container_one container">
+    <div class="reviews_photo">
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/review/review1_lg-@1x_result.jpg 1x,
+            ./images/review/review1_lg-@2x_result.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/review/review1_md-@1x_result.jpg 1x,
+            ./images/review/review1_md-@2x_result.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/review/review1_sm-@1x_result.jpg 1x,
+            ./images/review/review1_sm-@2x_result.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="reviews_image"
+          src="./images/review/review1_sm-@1x_result.jpg"
+          alt="Girl from LA"
+          loading="lazy"
+        />
+      </picture>
     </div>
     <div class="reviews_opinion">
       <p class="reviews_text">
@@ -22,5 +83,23 @@
       </p>
     </div>
     <p class="reviews_who">Emily, Los Angeles</p>
+  </div>
+  <!-- BUTTON SLIDER -->
+  <div class="radio">
+    <input type="radio" name="slider" id="button1" checked />
+    <input type="radio" name="slider" id="button2" />
+    <input type="radio" name="slider" id="button3" />
+    <label id="hw1" for="button1"></label>
+    <label id="hw2" for="button2"></label>
+    <label id="hw3" for="button3"></label>
+    <!-- <label class="radio_label">
+        <input type="radio" name="slider" class="radio_button_first" checked />
+      </label>
+      <label class="radio_label">
+        <input type="radio" name="slider" class="radio_button_second" />
+      </label>
+      <label class="radio_label">
+        <input type="radio" name="slider" class="radio_button_third" />
+      </label> -->
   </div>
 </section>
