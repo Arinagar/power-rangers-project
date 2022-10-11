@@ -1,5 +1,4 @@
 .reviews {
-  // outline: 3px solid tomato;
   @media screen and (max-width: 767.98px) {
     background: linear-gradient($primary_b-c 9%, $transparent_b-c 9%);
   }
@@ -70,7 +69,7 @@
 .reviews_opinion {
   margin: 30px auto;
   padding: 34px 39px;
-  min-width: 280px;
+  min-width: 270px;
 
   background: $primary_b-c;
   border-radius: 10px;
@@ -79,10 +78,12 @@
   @media screen and (min-width: 768px) {
     border-radius: 24px;
     width: 705px;
+    padding: 29px 80px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 968px;
+    padding: 39px 74px;
   }
 }
 
@@ -90,6 +91,17 @@
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .reviews_who {
