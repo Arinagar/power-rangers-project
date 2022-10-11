@@ -115,4 +115,8 @@
 .products_arrow {
     position: absolute;
     bottom: 18px;
+
+    &:hover, &:focus {
+        scale: 1.5;
+    }
 }
