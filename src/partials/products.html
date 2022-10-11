@@ -7,7 +7,35 @@
         <ul class="products_list">
             <li class="products_card card-green">
                 <div class="products_image--block">
-                    <img class="products_image" src="./images/products/card1_sm-@1x_result.png" alt="Three different ice-creams">
+                    <picture>
+                        <!-- Desktop screen -->
+
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="./images/products/card1_lg-@1x_result.png 1x, ./images/products/card1_lg-@2x_result.png 2x"
+                          type="image/jpg"
+                        />
+                        <!-- Tablet screen -->
+
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="./images/products/card1_md-@1x_result.png 1x, ./images/products/card1_md-@1x_result.png 2x"
+                          type="image/jpg"
+                        />
+                        <!-- Mobile screen -->
+
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="./images/products/card1_sm-@1x_result.png 1x, ./images/products/card1_sm-@1x_result.png 2x"
+                          type="image/jpg"
+                        />
+                        <img
+                          class="products_image"
+                          src="./images/gallery/img-1_sm.jpg"
+                          alt="Three different ice-creams"
+                          loading="lazy"
+                        />
+                      </picture>
                 </div>
                 <h3 class="products_card--name">ice cream</h3>
                 <p class="products_card--description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
