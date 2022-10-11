@@ -6,11 +6,14 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url('../images/main_b-c.png');
-  background-position: center;
-  background-size: contain;
   font-size: 14px;
-  letter-spacing: 0em;
+  letter-spacing: normal;
+
+  background-position: center;
+  background-size: 30% cover;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url('../images/main_b-c.png');
 }
 
 img {
@@ -22,10 +25,6 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
 }
 
 h1,

@@ -1,26 +1,191 @@
 <section class="reviews section">
   <div class="gallery container">
-    <img
-      src="./images/portfolio/portfolio1_sm-@1x_result.jpg"
-      alt="A lot of ice cream"
-      class="gallery_card"
-    />
-  </div>
-  <div class="reviews_container container">
-    <div class="reviews_photo">
-      <img
-        src="./images/review/review1_sm-@1x_result.jpg"
-        alt="Girl"
-        class="reviews_image"
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/portfolio/portfolio1_lg-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_lg-@2x_result.jpg 2x
+        "
+        type="image/jpg"
       />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/portfolio/portfolio1_md-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_md-@2x_result.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/portfolio/portfolio1_sm-@1x_result.jpg 1x,
+          ./images/portfolio/portfolio1_sm-@2x_result.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="gallery_card"
+        src="./images/portfolio/portfolio1_sm-@1x_result.jpg"
+        alt="A lot of ice cream"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <!-- Slider main container -->
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <!-- REVIEW 1 -->
+          <div class="reviews_card">
+            <div class="reviews_photo">
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/review/review1_lg-@1x_result.jpg 1x,
+                    ./images/review/review1_lg-@2x_result.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/review/review1_md-@1x_result.jpg 1x,
+                    ./images/review/review1_md-@2x_result.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/review/review1_sm-@1x_result.jpg 1x,
+                    ./images/review/review1_sm-@2x_result.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="reviews_image"
+                  src="./images/review/review1_sm-@1x_result.jpg"
+                  alt="Girl from LA"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="reviews_opinion">
+              <p class="reviews_text">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+            </div>
+            <p class="reviews_who">Emily, Los Angeles</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- REVIEW 2 -->
+          <div class="reviews_card">
+            <div class="reviews_photo">
+              <picture>
+                <source
+                  media="(min-width: 300px)"
+                  srcset="
+                    ./images/review/Bryan_lg-@1x_result.png 1x,
+                    ./images/review/Bryan_lg-@2x_result.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="reviews_image"
+                  src="./images/review/Bryan_lg-@1x_result.png"
+                  alt="Guy from New-York eating ice-cream"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="reviews_opinion">
+              <p class="reviews_text">
+                Every day we come to you with friends after classes in college.
+                We love your ice cream and casual atmosphere!
+              </p>
+            </div>
+            <p class="reviews_who">Bryan, New-York</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- REVIEW 3 -->
+          <div class="reviews_card">
+            <div class="reviews_photo">
+              <picture>
+                <source
+                  media="(min-width: 300px)"
+                  srcset="
+                    ./images/review/Diana_lg-@1x_result.png 1x,
+                    ./images/review/Diana_lg-@2x_result.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="reviews_image"
+                  src="./images/review/Diana_lg-@1x_result.png"
+                  alt="Girl from Chicago pretends to eating ice-cream"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="reviews_opinion">
+              <p class="reviews_text">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+            </div>
+            <p class="reviews_who">Diana, Chicago</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- REVIEW 4 -->
+          <div class="reviews_card">
+            <div class="reviews_photo">
+              <picture>
+                <source
+                  media="(min-width: 300px)"
+                  srcset="
+                    ./images/review/Sam_lg-@1x_result.png 1x,
+                    ./images/review/Sam_lg-@2x_result.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="reviews_image"
+                  src="./images/review/Sam_lg-@1x_result.png"
+                  alt="Guy from Los Angeles smiling"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="reviews_opinion">
+              <p class="reviews_text">
+                I love eating popsicles on a hot day. Yours is always delicious.
+                I recommend your cafe to everyone I know.
+              </p>
+            </div>
+            <p class="reviews_who">Sam, Los Angeles</p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="reviews_opinion">
-      <p class="reviews_text">
-        I love visiting your cafe. You prepare the most delicious ice cream in
-        Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-        and polite staff.
-      </p>
-    </div>
-    <p class="reviews_who">Emily, Los Angeles</p>
   </div>
 </section>
