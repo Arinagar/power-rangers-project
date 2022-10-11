@@ -10,6 +10,10 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) 
+    {
+        margin-bottom: 72px;
+}
 }
 
 .about_title--name {
@@ -21,17 +25,28 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-wh; 
+    @media screen and (min-width: 768px) 
+    {
+        font-size:  34px; 
+}
 }
 
 .about_title--description {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-text-transform: uppercase;
-color: $text-wh;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-wh;
+
+@media screen and (min-width: 768px) 
+    {
+        margin-bottom: 12px;
+        font-size: 22px;
+
+}
 }
 
 .about_container {
@@ -46,10 +61,10 @@ color: $text-wh;
     @media screen and (min-width: 768px) 
     {
       width: 50%;
+      align-items: flex-start;
+      padding: 12px 12px 0px;
     }
 }
-
-
 
 .about_image--block {
     position: relative;
@@ -58,6 +73,14 @@ color: $text-wh;
     margin: 0px auto 62px;
     border-radius: 50%;
     background-color: rgba(248, 210, 78, 0.7);
+
+    @media screen and (min-width: 768px) 
+    {
+      width: 330px;
+      height: 330px;
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
 }
 
 .about_image {
@@ -65,7 +88,13 @@ color: $text-wh;
     top: 22px;
     width: 278px;
     height: 278px;
-    bottom: 12px;
+   ;
+
+    @media screen and (min-width: 768px) 
+    {
+      width: 330px;
+      height: 330px;
+    }
 }
 
 .about_text {
@@ -96,6 +125,12 @@ color: $text-wh;
 
 .btn--readmore {
     margin: 20px auto;
+
+    @media screen and (min-width: 768px) 
+    {
+        margin: 48px 0px 0px 0px;
+
+}
 }
 
 .about_card {

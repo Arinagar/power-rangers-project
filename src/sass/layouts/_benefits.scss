@@ -4,6 +4,23 @@
     padding: 32px 0px;
     padding-top: 22px;
     background-color: $primary_b-c;
+
+    @media screen and (min-width: 768px) 
+    {
+        padding-top: 53px;
+        padding-bottom: 204px;    
+}
+}
+
+.benefits_box {
+    @media screen and (min-width: 768px) 
+    {
+        padding: 0px 56px;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+
+}
 }
 
 .benefits_card {
@@ -12,6 +29,11 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) 
+    {
+        margin-bottom: 0px;
+}
 }
 
 .benefits_icon-area {
@@ -23,6 +45,11 @@
     border-radius: 50%;
     margin-bottom: 16px;
     background-color: $logo;
+
+    @media screen and (min-width: 768px) 
+    {
+        margin-bottom: 32px;
+}
 }
 
 .benefits_card--value {
@@ -35,6 +62,13 @@
     text-transform: uppercase;
     color: $text-wh;
     margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) 
+    {
+    font-size: 48px;
+    line-height: 1.22;
+    margin-bottom: 16px;
+}
 }
 
 .benefits_card--text {
@@ -46,4 +80,12 @@
     text-align: center;
     color: $text-wh;
     padding: 0px 20px;
+
+    @media screen and (min-width: 768px) 
+    {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 174%;
+        padding: 0px 10px;
+}
 }
