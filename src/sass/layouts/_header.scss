@@ -1,7 +1,7 @@
 /* HEADER */
 
 .header {
-  background-color: $primary_b-c;
+  background-color: transparent;
   position: absolute;
   top: 0;
   width: 100vw;
@@ -36,6 +36,9 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
+    @media screen and (min-width: 1200px) {
+    height: 70px;
+  }
 }
 
 .header_nav-list {
@@ -56,23 +59,3 @@
   }
 }
 
-
-// Mobile menu
-
-.menu-toggle {
-  height: 32px;
-  width: 32px;
-  // background-color: inherit;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: 32px;
-  border: none;
-
-  
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}

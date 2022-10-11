@@ -6,9 +6,26 @@
     </h1>
     <ul class="hero-list list">
       <button class="btn btn--products">Products</button>
-      <button class="btn btn--howmade">How it's made?</button>
+      <button class="btn btn--howmade btn--hero">How it's made?</button>
     </ul>
+    <picture class="big-icecream">
+      <source srcset="./images/hero/big-ice-cream_sm-@1x_result.png 1x, ./images/hero/big-ice-cream_sm-@2x_result.png
+        2x" media="(min-width: 320px)" />
+
+      <source
+        srcset="./images/hero/big-ice-cream_md-@1x_result.png 1x, ./images/hero/big-ice-cream_md-@2x_result.png 2x"
+        media="(min-width: 768px)" />
+
+      <source
+        srcset="./images/hero/big-ice-cream_lg-@1x_result.png  1x, ./images/hero/big-ice-cream_lg-@2x_result.png  2x"
+        media="(min-width: 1200px)" />
+
+
+      <img src="./images/hero/big-ice-cream_lg-@1x_result.png" 484w alt="Icecream" />
+    </picture>
+
     <div class="hero_plate">
+<<<<<<< Updated upstream
       <img
         class="plate_img"
         src="./images/hero/plate_md-@1x_result.png"
@@ -20,6 +37,35 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
       </p>
+=======
+      <picture>
+
+        <source srcset="./images/hero/plate_md-@1x_result.png 1x, ./images/hero/plate_md-@2x_result.png 2x"
+          media="(min-width: 768px)" />
+
+        <source srcset="./images/hero/plate_lg-@1x_result.png 1x, ./images/hero/plate_lg-@2x_result.png 2x"
+          media="(min-width: 1200px)" />
+
+
+        <img class="plate_img" src=" ./images/hero/plate_lg-@1x_result.png" alt="Icecream plate" />
+      </picture>
+      <div class="hero_plate-desc">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+        </p>
+        <svg class="products_arrow arrow--hero" width="40px" height="16px">
+          <use href="./images/icons.svg#icon-default_arrow"></use>
+        </svg>
+      </div>
+      <div class="places-number">
+        <p class="places-number_num">16</p>
+        <p class="places-number_names">cafes</p>
+        <p class="places-number_num">23</p>
+        <p class="places-number_names">food trucks</p>
+      </div>
+
+>>>>>>> Stashed changes
     </div>
   </div>
 </section>
