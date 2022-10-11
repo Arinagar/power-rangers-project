@@ -115,4 +115,9 @@
 .products_arrow {
     position: absolute;
     bottom: 18px;
+
+    &:hover {
+        width: 50px;
+        stroke: ;
+    }
 }
