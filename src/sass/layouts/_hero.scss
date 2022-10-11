@@ -1,0 +1,113 @@
+/* HERO */
+
+
+.hero {
+  position: relative;
+  height: 502px;
+  background-color: $primary_b-c;
+
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: local;
+  background-position: bottom;
+  resize: both;
+
+      @media screen and (min-width: 768px) {
+      height: 415px;
+    //    background-image: url(../images/hero/big-ice-cream_md-@1x_result.jpg);
+    //   @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/big-ice-cream_md-@2x_result.jpg);
+      }
+    //   }
+
+      @media screen and (min-width: 1200px) {
+      height: 664px;
+    //    background-image: url(../images/hero/big-ice-cream_lg-@1x_result.png);
+    //   @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/big-ice-cream_lg-@2x_result.jpg);
+    //   }
+    }
+
+}
+
+
+
+.page-title {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  margin-top: 61px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+
+  color: $text-wh;
+  width: 247px;
+
+      @media screen and (min-width: 768px) {
+        width: 181px;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 367px;
+        font-size: 38px;
+        margin-bottom: 28px;
+        margin-top: 45px;
+      }
+}
+
+.page-title_part {
+  font-size: 34px;
+        @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 0.55;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 38px;
+      }
+}
+
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+@media screen and (min-width: 768px) {
+
+  margin-bottom: 28px;
+}
+   @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        gap: 12px;
+      }
+}
+
+.hero_plate {
+  display: none;
+  @media screen and (min-width: 768px) {
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+.plate_img {
+  display: inline-block;
+}
+
+.hero_plate-desc {
+  margin-left: 33px;
+  display: inline-block;
+  width: 151px;
+  color: $text-wh;
+}
