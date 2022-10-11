@@ -116,8 +116,7 @@
     position: absolute;
     bottom: 18px;
 
-    &:hover {
-        width: 50px;
-        stroke: ;
+    &:hover, &:focus {
+        scale: 1.5;
     }
 }
