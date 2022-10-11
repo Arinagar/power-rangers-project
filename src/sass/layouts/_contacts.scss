@@ -105,6 +105,7 @@
   &:focus,
   &:active {
     text-decoration: underline;
+    color: $for_contacts;
   }
 }
 
@@ -112,6 +113,7 @@
   font-size: inherit;
   font-weight: inherit;
   line-height: 183%;
+  color: inherit;
 }
 
 .card-partial_working-hours {
