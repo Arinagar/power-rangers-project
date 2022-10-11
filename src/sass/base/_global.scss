@@ -10,18 +10,10 @@ body {
   letter-spacing: normal;
 
   background-position: center;
-  background-size: 50% cover;
+  background-size: 30% cover;
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-image: url('../images/main_b-c.png');
-
-  // @media screen and (min-width: 767.98px) {
-  //   background-image: url('../images/main_b-c_tabl.png');
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   background-image: url('../images/main_b-c.png');
-  // }
 }
 
 img {

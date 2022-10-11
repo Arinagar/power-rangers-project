@@ -1,26 +1,32 @@
 .contacts {
+  padding-top: 30px;
   padding-bottom: 40px;
+  background: linear-gradient($transparent_b-c 23.5%, $primary_b-c 23.5%);
 
-  @media screen and (min-width: 768px){
-    padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    background: linear-gradient($transparent_b-c 50%, $primary_b-c 50%);
   }
 
-  @media screen and (min-width: 1200px){
-    padding-top: 70px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
     padding-bottom: 120px;
+    background: linear-gradient($transparent_b-c 19%, $primary_b-c 19%);
   }
 }
 
 .contacts_cards-set {
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     gap: 16px;
+    margin-bottom: 60px;
+
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     gap: 32px;
     margin-bottom: 64px;
   }
@@ -36,13 +42,14 @@
   line-height: 186%;
   letter-spacing: 0.04em;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     max-width: 224px;
-    max-height: 528px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 14px;
@@ -89,6 +96,8 @@
 }
 
 .card-city-link {
+  font-size: inherit;
+  font-weight: inherit;
   line-height: 183%;
   color: $for_contacts;
 
@@ -97,6 +106,12 @@
   &:active {
     text-decoration: underline;
   }
+}
+
+.contact-card_links {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 183%;
 }
 
 .card-partial_working-hours {

@@ -1,5 +1,5 @@
 .reviews {
-  outline: 3px solid tomato;
+  // outline: 3px solid tomato;
   @media screen and (max-width: 767.98px) {
     background: linear-gradient($primary_b-c 9%, $transparent_b-c 9%);
   }
@@ -27,6 +27,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 128px;
+  }
 }
 
 .gallery_card {
@@ -43,22 +47,24 @@
   }
 }
 
-.reviews_container_one,
-reviews_container_two,
-reviews_container_three {
+.reviews_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
 }
 
 .reviews_photo {
   width: 85px;
   height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.reviews_image {
-  border-radius: 50%;
+.reviews_photo > img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .reviews_opinion {
@@ -94,43 +100,21 @@ reviews_container_three {
 
 // BUTTONS SLIDER
 
-.radio {
+.swiper {
+  min-width: 280px;
+}
+
+.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.radio input {
-  display: none;
-}
-.radio label {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: none;
-  background: $slider_btn;
-  cursor: pointer;
-
-  @media screen and (max-width: 767.98px) {
-    margin-top: 14px;
-  }
-  margin-top: 32px;
-}
-.radio label:not(:last-child) {
-  margin-right: 18px;
-}
-
-#button1:checked ~ #hw1,
-#button2:checked ~ #hw2,
-#button3:checked ~ #hw3 {
-  background: $primary_b-c;
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
+  padding-bottom: 44px;
 }
 
 .swiper-pagination-bullet {
+  background: $primary_b-c;
+  width: 12px;
+  height: 12px;
+
+  --swiper-pagination-bullet-horizontal-gap: 9px;
 }
