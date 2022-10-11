@@ -19,19 +19,19 @@
 
                         <source
                           media="(min-width: 768px)"
-                          srcset="./images/products/card1_md-@1x_result.png 1x, ./images/products/card1_md-@1x_result.png 2x"
+                          srcset="./images/products/card1_md-@1x_result.png 1x, ./images/products/card1_md-@2x_result.png 2x"
                           type="image/jpg"
                         />
                         <!-- Mobile screen -->
 
                         <source
                           media="(max-width: 767px)"
-                          srcset="./images/products/card1_sm-@1x_result.png 1x, ./images/products/card1_sm-@1x_result.png 2x"
+                          srcset="./images/products/card1_sm-@1x_result.png 1x, ./images/products/card1_sm-@2x_result.png 2x"
                           type="image/jpg"
                         />
                         <img
                           class="products_image"
-                          src="./images/gallery/img-1_sm.jpg"
+                          src="./images/products/card1_sm-@1x_result.png"
                           alt="Three different ice-creams"
                           loading="lazy"
                         />
@@ -44,9 +44,37 @@
                      <use href="./images/icons.svg#icon-default_arrow"></use>
                 </svg>
             </li> 
-    <li class="products_card card-yellow">
+            <li class="products_card card-yellow">
         <div class="products_image--block">
-            <img class="products_image" src="./images/products/card2_sm-@1x_result.png" alt="Three different ice-creams">
+            <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/products/card2_lg-@1x_result.png 1x, ./images/products/card2_lg-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/products/card2_md-@1x_result.png 1x, ./images/products/card2_md-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/products/card2_sm-@1x_result.png 1x, ./images/products/card2_sm-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="products_image"
+                  src="./images/products/card2_sm-@1x_result.png"
+                  alt="The glass of icecoffee"
+                  loading="lazy"
+                />
+              </picture>
         </div>
         <h3 class="products_card--name">ice coffee</h3>
         <p class="products_card--description">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
@@ -54,10 +82,38 @@
         <svg class="products_arrow" width="40px" height="16px">
             <use href="./images/icons.svg#icon-default_arrow"></use>
         </svg>
-    </li> 
-    <li class="products_card card-brown">
+            </li> 
+            <li class="products_card card-brown">
         <div class="products_image--block">
-            <img class="products_image" src="./images/products/card3_sm-@1x_result.png" alt="Three different ice-creams">
+            <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/products/card3_lg-@1x_result.png 1x, ./images/products/card3_lg-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/products/card3_md-@1x_result.png 1x, ./images/products/card3_md-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/products/card3_sm-@1x_result.png 1x, ./images/products/card3_sm-@2x_result.png 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="products_image"
+                  src="./images/products/card3_sm-@1x_result.png"
+                  alt="Sweet drinks in glass"
+                  loading="lazy"
+                />
+              </picture>
         </div>
         <h3 class="products_card--name">milkshakes</h3>
         <p class="products_card--description">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice
@@ -65,7 +121,7 @@
         <svg class="products_arrow" width="40px" height="16px">
             <use href="./images/icons.svg#icon-default_arrow"></use>
         </svg>
-    </li> 
+            </li> 
 </ul>
 </div>
 </section>
