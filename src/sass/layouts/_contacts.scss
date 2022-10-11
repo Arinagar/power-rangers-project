@@ -22,6 +22,8 @@
     display: flex;
     justify-content: space-around;
     gap: 16px;
+    margin-bottom: 60px;
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,13 +42,14 @@
   line-height: 186%;
   letter-spacing: 0.04em;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     max-width: 224px;
-    max-height: 528px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 14px;
@@ -93,6 +96,8 @@
 }
 
 .card-city-link {
+  font-size: inherit;
+  font-weight: inherit;
   line-height: 183%;
   color: $for_contacts;
 
@@ -101,6 +106,12 @@
   &:active {
     text-decoration: underline;
   }
+}
+
+.contact-card_links {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 183%;
 }
 
 .card-partial_working-hours {
