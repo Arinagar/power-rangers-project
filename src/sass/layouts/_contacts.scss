@@ -1,26 +1,30 @@
 .contacts {
+  padding-top: 30px;
   padding-bottom: 40px;
+  background: linear-gradient($transparent_b-c 23.5%, $primary_b-c 23.5%);
 
-  @media screen and (min-width: 768px){
-    padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    background: linear-gradient($transparent_b-c 50%, $primary_b-c 50%);
   }
 
-  @media screen and (min-width: 1200px){
-    padding-top: 70px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
     padding-bottom: 120px;
+    background: linear-gradient($transparent_b-c 19%, $primary_b-c 19%);
   }
 }
 
 .contacts_cards-set {
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     gap: 16px;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     gap: 32px;
     margin-bottom: 64px;
   }
