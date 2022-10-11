@@ -1,0 +1,49 @@
+.benefits {
+    display: flex;
+    align-items: center;
+    padding: 32px 0px;
+    padding-top: 22px;
+    background-color: $primary_b-c;
+}
+
+.benefits_card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.benefits_icon-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    background-color: $logo;
+}
+
+.benefits_card--value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-wh;
+    margin-bottom: 18px;
+}
+
+.benefits_card--text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: $text-wh;
+    padding: 0px 20px;
+}
