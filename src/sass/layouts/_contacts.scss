@@ -1,9 +1,29 @@
 .contacts {
-  padding-bottom: 39px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 1200px){
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
 }
 
 .contacts_cards-set {
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px){
+    gap: 32px;
+    margin-bottom: 64px;
+  }
 }
 
 .contact-card-container {
@@ -19,22 +39,45 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+    max-height: 528px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 368px;
+    font-size: 16px;
+    padding: 40px;
+  }
 }
 
 .card-partial {
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid $border-contacts-card;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .card-category-name {
   width: 80px;
-  height: 100%;
   background-color: $logo;
   border-radius: 4px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    margin-bottom: 32px;
+  }
 }
 
 .name-foodtruck {
@@ -48,35 +91,41 @@
 .card-city-link {
   line-height: 183%;
   color: $for_contacts;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .card-partial_working-hours {
   color: $btn-dis;
 }
 
+.contacts_button-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+}
+
 .contacts_button {
   margin: auto;
   margin-bottom: 16px;
   position: relative;
-  color: #131313;
-  background-color: #f8d24e;
 }
 
 .contacts_button-icon {
   position: absolute;
   stroke: currentColor;
-
-  //   Need to check
-  //   &:hover,
-  //   &:focus {
-  //     color: currentColor;
-  //   }
 }
 
 .locations-icon {
-  right: 44px;
+  right: 32px;
 }
 
 .franchise-icon {
-  right: 56px;
+  right: 44px;
 }
