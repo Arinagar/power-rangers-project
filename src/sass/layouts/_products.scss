@@ -2,6 +2,7 @@
 .products {
     display: flex;
     align-items: center;
+
 }
 
 .products_title {
@@ -18,7 +19,16 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #131313; 
+    color:  $text-bl; 
+    @media screen and (min-width: 768px) 
+    {
+    font-size: 34px;
+}
+    @media screen and (min-width: 1200px) 
+{
+    font-size: 36px;
+    letter-spacing: 0.06em;
+}
 }
 
 .products_title--description {
@@ -26,15 +36,34 @@
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     text-transform: uppercase;
-    color: #131313;
+    color:  $text-bl;
     margin-bottom: 12px;
+    @media screen and (min-width: 768px) 
+    {
+    font-size: 22px;
+}
+    @media screen and (min-width: 1200px) 
+    {
+font-size: 30px;
+}
 }
 
 .products_list {
     padding: 0px;
     margin: 0px;
+    @media screen and (min-width: 768px) 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 16px;
+    }
+    @media screen and (min-width: 1200px) 
+    {
+       gap: 32px;
+    }
 }
 
 .products_card {
@@ -46,25 +75,36 @@
     width: 100%;
     height: 420px;
     border-radius: 24px;
-    background: #AEC6A5;
+    background: $card1_b-c;
     margin-top: 160px;
+    @media screen and (min-width: 768px) 
+    {
+        margin-top: 200px;
+        padding: 0px 26px;
+    }
+    @media screen and (min-width: 1200px) 
+    {
+        margin-top: 304px;
+        height: 536px;
+    
+    }
 }
 
 .card-yellow {
-    background-color: #EFD478;
+    background-color: $card2_b-c;
 }
 
 .card-yellow .products_image--block {
-    background-color: #EFD478;
+    background-color: $card2_b-c;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .card-brown {
-    background-color: #D6936D;
+    background-color: $card3_b-c;
 }
 
 .card-brown .products_image--block {
-    background-color: #D6936D;
+    background-color: $card3_b-c;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
@@ -78,13 +118,26 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #AEC6A5;
+    background-color: $card1_b-c;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    @media screen and (min-width: 1200px) 
+    {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+    }
 }
 
 .products_image {
     position: absolute;
     bottom: 12px;
+    @media screen and (min-width: 1200px) 
+    {
+        width: 300px;
+        height: 300px;
+        bottom: 17px;
+    }
 }
 
 .products_card--name {
@@ -92,12 +145,21 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #131313;
+    color: $text-bl;
     margin-top: 123px;
+    @media screen and (min-width: 768px) 
+    {
+    font-size: 22px;
+}
+    @media screen and (min-width: 1200px) 
+{
+   margin-top: 174px;
+   font-size: 30px;
+}
 }
 
 .products_card--description {
@@ -108,13 +170,27 @@
     line-height: 176%;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #131313;
+    color: $text-bl;
     margin-top: 40px;
+
+    @media screen and (min-width: 1200px) 
+    {
+        font-size: 16px;
+        margin-top: 65px;
+        padding: 0px 30px;
+
+    }
 }
 
 .products_arrow {
     position: absolute;
     bottom: 18px;
+    
+    @media screen and (min-width: 1200px) 
+    {
+       bottom: 50px;
+}
+
 
     &:hover, &:focus {
         scale: 1.5;
