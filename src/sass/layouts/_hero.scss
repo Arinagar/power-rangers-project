@@ -29,7 +29,8 @@
 
       @media screen and (min-width: 1200px) {
       height: 664px;
-       background-image: url(../images/hero/dots_lg-@1x_result.png);
+      background-size: auto;
+      background-image: url(../images/hero/dots_lg-@1x_result.png);
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -44,15 +45,13 @@
   bottom: -53px;
   left: 32px;
    @media screen and (min-width: 768px) {
-    scale: 1.5;
-    bottom: 2;
-    left: 400px;
+    bottom: -56px;
+    left: 365px;
    }
 
     @media screen and (min-width: 1200px) {
-    scale: 2.2;
-    bottom: 80;
-    left: 750px;
+    bottom: -100px;
+    left: 550px;
     }
 }
 
@@ -127,7 +126,6 @@
 
 .plate_img {
   display: block;
-  width: 225px;
 }
 
 .hero_plate-desc {
