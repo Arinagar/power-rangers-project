@@ -40,11 +40,12 @@
 
 .hero .container {
   position: relative;
+  // поставили релатив на контейнер для того чтобы изображение не плыло при растяжении экрана
 }
 
 .big-icecream {
   position: absolute;
-  // bottom: 0;  настроить позиционирование
+  // bottom: 0;  настроить позиционирование для мороженки для каждого экрана
   left: 32px;
   @media screen and (min-width: 768px) {
     bottom: -56px;
