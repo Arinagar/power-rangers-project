@@ -1,15 +1,19 @@
-// layouts
+// UTILS
 @import './common';
 @import './utils/reset';
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/btn';
 
-// layouts
+// BASE
 @import './base/container';
 @import './base/global';
 
 // COMPONENTS
-@import './components/btn';
+@import './components/modal';
+@import './components/modal-franchise';
+@import './components/modal-locations';
+
 
 // LAYOUTS
 @import './layouts/header';
