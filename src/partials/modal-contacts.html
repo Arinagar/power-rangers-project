@@ -1,0 +1,57 @@
+<div class="modal" data-modal="1">
+    <p class="modal_title">Our Locations</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5173.38792835319!2d34.565173!3d49.5846615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f61d69d0883%3A0xa88a41fe6cb78c72!2sPylypa%20Orlyka%20St%2C%205%2C%20Poltava%2C%20Poltavs&#39;ka%20oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1665593402134!5m2!1sen!2sua"
+        style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="modal_map-frame"></iframe>
+    <button type="button" class="btn modal_button">Open map</button>
+</div>
+<div class="modal" data-modal="2">
+    <p class="modal_title">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="modal_info">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+      <form class="form-franchise" role="group">
+            <label>
+              <input
+                id="user-name"
+                type="text"
+                class="form-franchise_label"
+                name="username"
+                placeholder="Name"
+                required
+                minlength="3"
+                pattern="^[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+$|^[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+(\s|,)[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+$"
+                title="Name should contain at least 3 characters">
+            </label>
+              <label>
+                <input
+                  id="user-tel"
+                  type="tel"
+                  class="form-franchise_label"
+                  name="user_phone"
+                  placeholder="Phone"
+                  required
+                  pattern="[0-9]{12}"
+                  minlength="12"
+                  maxlength="12"
+                  title="Phone number should contain at least 12 number digits"
+                >
+              </label>
+            <label>
+              <input
+                id="user-mail"
+                type="email"
+                class="form-franchise_label"
+                name="user_mail"
+                placeholder="Email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                >
+            </label>
+          <div class="franchise_textarea-group">
+              <label class="form-franchise-group">
+                <textarea name="comment" autocorrect="on" class="form-franchise_label form-franchise-textarea" rows="5" placeholder="Comment"></textarea>
+              </label>
+          </div>
+        <button type="submit" class="btn modal_button">Submit</button>
+      </form>
+</div>
+<div class="backdrop js-overlay-modal"></div>

@@ -1,0 +1,56 @@
+.form-franchise {
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    margin: auto;
+  }
+}
+
+.form-franchise_label {
+  background: $background-modal-franchise;
+  border: 1px solid $primary_b-c;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 140%;
+  width: 224px;
+  padding: 8px 12px 7px 12px;
+
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:focus {
+    border: 1px solid $card2_b-c;
+}
+
+  &:not(:placeholder-shown):required:invalid {
+      border: 1px solid $border-color-invalid;
+  }
+
+  &:not(:placeholder-shown):required:valid {
+      border: 1px solid $border-color-valid;
+  }
+}
+
+.form-franchise-textarea {
+  resize: none;
+  margin: 0;
+  height: 64px;
+
+  @media screen and (min-width: 768px) {
+    height: 84px;
+  }
+}
+
+.franchise_textarea-group {
+  height: 64px;
+
+  @media screen and (min-width: 768px) {
+    height: 84px;
+  }
+}
