@@ -1,14 +1,30 @@
 <header class="header">
   <div class="container">
     <nav class="header_nav">
-      <a class="logo" href="#">
-        <img src="./images/hero/logo_sm-@1x_result.png" alt="">
-      </a>
+
+      <picture>
+        <!-- Desktop screen -->
+        <source media="(min-width: 1200px)"
+          srcset="./images/hero/Logo_lg-@2x_result.png 1x, ./images/hero/Logo_lg-@2x-1_result.png 2x"
+          type="image/png" />
+
+        <!-- Tablet screen -->
+        <source media="(min-width: 768px)"
+          srcset="./images/hero/logo_md-@1x_result.png 1x, ./images/hero/logo_md-@1x-1_result.png 2x"
+          type="image/png" />
+
+        <!-- Mobile screen -->
+        <source media="(max-width: 767px)"
+          srcset="./images/hero/logo_sm-@1x_result.png 1x, ./images/hero/logo_sm-@2x_result.png 2x" type="image/png" />
+
+        <img class="logo" src="./images/hero/logo_sm-@1x_result.png" alt="Logo Icecream" loading="lazy" />
+      </picture>
+
       <ul class="header_nav-list">
         <li><a class="link" href="#">Home</a></li>
-        <li><a class="link" href="#">How it's made?</a></li>
-        <li><a class="link" href="#">Our Products</a></li>
-        <li><a class="link" href="#">Contact</a></li>
+        <li><a class="link" href="#about">How it's made?</a></li>
+        <li><a class="link" href="#products">Our Products</a></li>
+        <li><a class="link" href="#contacts">Contact</a></li>
       </ul>
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-icon" width="32" height="32">
