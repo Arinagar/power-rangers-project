@@ -1,8 +1,7 @@
 /* HERO */
 
-
 .hero {
-  position: relative;
+  // position: relative;
   height: 502px;
   background-color: $primary_b-c;
   background-repeat: no-repeat;
@@ -10,50 +9,53 @@
   background-position: bottom;
   resize: both;
 
-      background-image: url(../images/hero/dots_sm-@1x_result.png);
-       @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/dots_sm-@2x_result.png);
-      }
+  background-image: url(../images/hero/dots_sm-@1x_result.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/dots_sm-@2x_result.png);
+  }
 
-      @media screen and (min-width: 768px) {
-      height: 415px;
-      background-image: url(../images/hero/dots_md-@1x_result.png);
-      @media (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 768px) {
+    height: 415px;
+    background-image: url(../images/hero/dots_md-@1x_result.png);
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/hero/dots_md-@2x_result.png);
-      }
-      }
+    }
+  }
 
-      @media screen and (min-width: 1200px) {
-      height: 664px;
-       background-image: url(../images/hero/dots_lg-@1x_result.png);
-      @media (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+    background-size: auto;
+    background-image: url(../images/hero/dots_lg-@1x_result.png);
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/hero/dots_lg-@1x_result.png);
-      }
     }
+  }
+}
 
+.hero .container {
+  position: relative;
+  // поставили релатив на контейнер для того чтобы изображение не плыло при растяжении экрана
 }
 
 .big-icecream {
   position: absolute;
-  bottom: -53px;
+  bottom: -271px;  
   left: 32px;
-   @media screen and (min-width: 768px) {
-    scale: 1.5;
-    bottom: 2;
-    left: 400px;
-   }
+  @media screen and (min-width: 768px) {
+    bottom: -81px;
+    left: 365px;
+  }
 
-    @media screen and (min-width: 1200px) {
-    scale: 2.2;
-    bottom: 80;
-    left: 750px;
-    }
+  @media screen and (min-width: 1200px) {
+    bottom: -164px;
+    left: 550px;
+  }
 }
 
 .page-title {
@@ -70,46 +72,45 @@
   color: $text-wh;
   width: 247px;
 
-      @media screen and (min-width: 768px) {
-        width: 181px;
-        font-size: 18px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
+  @media screen and (min-width: 768px) {
+    width: 181px;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 
-      @media screen and (min-width: 1200px) {
-        width: 367px;
-        font-size: 38px;
-        margin-bottom: 28px;
-        margin-top: 45px;
-      }
+  @media screen and (min-width: 1200px) {
+    width: 367px;
+    font-size: 38px;
+    margin-bottom: 28px;
+    margin-top: 45px;
+  }
 }
 
 .page-title_part {
   font-size: 34px;
-        @media screen and (min-width: 768px) {
-        font-size: 24px;
-        line-height: 0.55;
-      }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 0.55;
+  }
 
-      @media screen and (min-width: 1200px) {
-        font-size: 38px;
-      }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+  }
 }
 
 .hero-list {
   display: flex;
   align-items: center;
   gap: 8px;
-@media screen and (min-width: 768px) {
-
-  margin-bottom: 28px;
-}
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
     gap: 12px;
     margin-bottom: 55px;
-        font-size: 14px;
-      }
+    font-size: 14px;
+  }
 }
 
 .hero_plate {
@@ -127,7 +128,6 @@
 
 .plate_img {
   display: block;
-  width: 225px;
 }
 
 .hero_plate-desc {
@@ -137,16 +137,17 @@
   color: $text-wh;
   font-size: 12px;
   line-height: 1.4;
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      margin-left: 14px;
-      width: 200px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    margin-left: 14px;
+    width: 200px;
+  }
 }
 
 .products_arrow.arrow--hero {
   position: static;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .places-number {
@@ -154,41 +155,38 @@
   top: 94px;
   right: 32px;
   gap: 20px;
-  
 }
 
 .places-number_num {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
 
-font-weight: 900;
-font-size: 28px;
-line-height: 1.21;
-text-align: right;
-letter-spacing: 0.04em;
-
-margin-bottom: 4px;
-   @media screen and (min-width: 1200px)  {
+  margin-bottom: 4px;
+  @media screen and (min-width: 1200px) {
     font-size: 46px;
-   }
+  }
 }
 
 .places-number_names {
-font-size: 8px;
-line-height: 1.25;
+  font-size: 8px;
+  line-height: 1.25;
 
-text-align: right;
+  text-align: right;
 
-color: $text-wh;
+  color: $text-wh;
 
-margin-bottom: 20px;
-   @media screen and (min-width: 1200px)  {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     margin-bottom: 16px;
-   }
+  }
 }
 
 .btn--hero {
-  @media screen and (min-width: 1200px)  {
-
+  @media screen and (min-width: 1200px) {
     width: 154px;
   }
 }
