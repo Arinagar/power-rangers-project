@@ -1,0 +1,68 @@
+.products_modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $burger_close;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+}
+
+.products_modal-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 28px;
+    right: 20px;
+}
+
+.products_close-icon {
+
+}
+
+.products_modal--title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.products_modal--image-block {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #9CBE8F;
+    margin-top: 30px;
+
+}
+
+.products_modal--image {
+    position: absolute;
+    bottom: 7px;
+    width: 130px;
+    height: 130px;
+}
+
+.products_components-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.products_component {
+    box-sizing: border-box;
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding-left: 0px;
+}
+
