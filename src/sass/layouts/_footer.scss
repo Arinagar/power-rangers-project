@@ -103,18 +103,22 @@
   justify-content: center;
   width: 100%;
   color: $primary_b-c;
-  background-color: $text-ye;
+  background-color: transparent;
   border-radius: 50%;
   transition: box-shadow 250ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 0 6 6 $footer;
+    color: $text-wh;
   }
 }
 
 .footer_icon {
   width: 100%;
   height: 100%;
+
+  fill: currentColor;
 }
 
 .footer_tel {
