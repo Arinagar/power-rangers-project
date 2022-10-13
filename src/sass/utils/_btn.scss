@@ -54,10 +54,8 @@
   @include btnFontMod(14px, 1.29);
   @include btnLookMod($btn-def, $btn-def, 10px);
 
-  padding: 0 0 0 32px;
   height: 42px;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-family: inherit;
   font-weight: 600;
@@ -93,7 +91,8 @@
 }
 
 .btn--readmore {
-  padding-right: 49px;
+  width: 164px;
+  padding-left: 34px;
 
   animation-name: pulse-read;
   animation-duration: 2s;
@@ -119,8 +118,7 @@
 .btn--ourlocations {
   min-width: 196px;
   max-width: 196px;
-
-  padding-left: 34px;
+  padding-left: 32px;
 
   animation-name: pulse;
   animation-duration: 2s;
@@ -146,7 +144,7 @@
 
 .btn--buynow {
   @include btnFontMod(14px, 1.2);
-  padding-right: 51px;
+  width: 152px;
 
   animation-name: pulse-buy;
   animation-duration: 2s;
@@ -172,7 +170,7 @@
 .btn--franchise {
   min-width: 196px;
   max-width: 196px;
-  padding: 0;
+  padding-left: 44px;
   background-color: transparent;
 
   &:hover,

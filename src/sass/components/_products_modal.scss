@@ -1,26 +1,26 @@
 .products_modal {
   @extend %modal;
-  
+
       @media screen and (min-width: 320px) and (max-height: 967px)
       {
       max-height: 95vh;
       padding-bottom: 20px;
       }
   }
-  
+
   .products_modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .products_modal--title {
       @media screen and (min-width: 320px) and (max-height: 967px)
       {
           margin-bottom: 20px;
-  
+
   }}
-  
+
   .products_modal--image-block {
       position: relative;
       width: 130px;
@@ -31,7 +31,7 @@
       margin-right: auto;
       margin-left: auto;
       box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-  
+
       @media screen and (min-width: 320px) and (max-height: 967px)
       {
         margin-top: 0;
@@ -39,18 +39,18 @@
         height: 80px;
   }
   }
-  
+
   .products_modal--image {
       position: absolute;
       bottom: 7px;
-  
+
       @media screen and (min-width: 320px) and (max-height: 967px)
       {
         width: 80px;
         height: 80px;
   }
   }
-  
+
   .products_components-list {
       list-style: none;
       display: flex;
@@ -65,7 +65,7 @@
         margin-top: 15px;
       }
   }
-  
+
   .products_component {
       display: flex;
       align-items: center;
@@ -76,7 +76,7 @@
       border: 2px solid #9CBE8F;
       border-radius: 40px;
       padding-left: 0px;
-  
+
       @media screen and (min-width: 768px)
       {
           width: 65px;
@@ -87,7 +87,7 @@
     height: 75px;
   }
   }
-  
+
   .component_part {
       display: flex;
       align-items: center;
@@ -97,45 +97,45 @@
       height: 43px;
       border-radius: 50%;
       background-color: #9CBE8F;
-  
+
       @media screen and (min-width: 768px)
       {
           width: 53px;
           height: 53px;
   }
-  
+
   @media screen and (min-width: 768px) and (max-height: 967px) {
     width: 43px;
     height: 43px;
   }
   }
-  
+
   .component_value {
       font-style: normal;
       font-weight: 500;
       font-size: 10px;
       line-height: 2.8;
       color: $text-bl;
-  
+
       @media screen and (min-width: 768px)
       {
           font-size: 12px;
   }
   }
-  
+
   .component_name {
       font-weight: 400;
       font-size: 10px;
       line-height: 1.22;
       color: $text-bl;
       margin-top: 8px;
-  
+
       @media screen and (min-width: 768px)
       {
           font-size: 12px;
   }
   }
-  
+
   .recipe--title {
       font-style: normal;
       font-weight: 500;
@@ -143,63 +143,63 @@
       line-height: 1.4;
       margin-top: 39px;
       margin-bottom: 24px;
-  
+
       @media screen and (min-width: 768px)
       {
          margin-top: 48px;
   }
-  
+
   @media screen and (min-width: 320px) and (max-height: 967px) {
     margin-top: 20px;
     margin-bottom: 15px;
   }
-  
+
   }
-  
+
   .recipe_list {
       display: flex;
       flex-direction: column;
       width: 100%;
       gap: 11px;
       margin-bottom: 48px;
-  
+
       @media screen and (min-width: 768px)
       {
          padding: 0px 40px;
   }
-  
+
   @media screen and (min-width: 320px) and (max-height: 967px) {
     margin-bottom: 25px;
   }
   }
-  
+
   .recipe_item {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
   }
-  
+
   .recipe_ingredient {
     @media screen and (min-width: 320px) and (max-height: 775px) {
     font-size: 11px;
   }
   }
-  
+
   // ===================FORM
-  
+
   .products_form {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       padding: 0px 20px 0px 20px;
-  
+
       @media screen and (min-width: 768px)
       {
          padding: 0px 100px 0px 100px;
   }
   }
-  
+
   .products_form-input-name {
       width: 100%;
       height: 42px;
@@ -207,14 +207,26 @@
       background: rgba(248, 210, 78, 0.1);
       border: 1px solid #84A178;
       border-radius: 10px;
-  
+
         @media screen and (min-width: 320px) and (max-height: 775px) {
         font-size: 11px;
         height: 30px;
       }
-  
+
+      &:focus {
+        border: 1px solid $card2_b-c;
+    }
+
+      &:not(:placeholder-shown):required:invalid {
+          border: 1px solid $border-color-invalid;
+      }
+
+      &:not(:placeholder-shown):required:valid {
+          border: 1px solid $border-color-valid;
+      }
+
   }
-  
+
   .products_form-input-tel {
       width: 100%;
       height: 42px;
@@ -223,16 +235,29 @@
       background: rgba(248, 210, 78, 0.1);
       border: 1px solid #84A178;
       border-radius: 10px;
-  
-      @media screen and (min-width: 320px) and (max-height: 967px)
-      { margin-top: 8px;
+
+      @media screen and (min-width: 320px) and (max-height: 967px){
+        margin-top: 8px;
+      }
+
+      @media screen and (min-width: 320px) and (max-height: 775px) {
+        font-size: 11px;
+        height: 30px;
+      }
+
+    &:focus {
+      border: 1px solid $card2_b-c;
   }
-  @media screen and (min-width: 320px) and (max-height: 775px) {
-    font-size: 11px;
-    height: 30px;
+
+    &:not(:placeholder-shown):required:invalid {
+        border: 1px solid $border-color-invalid;
   }
+
+    &:not(:placeholder-shown):required:valid {
+        border: 1px solid $border-color-valid;
   }
-  
+}
+
   .products_form-textarea {
       width: 100%;
       height: 84px;
@@ -242,7 +267,7 @@
       border: 1px solid #84A178;
       border-radius: 10px;
       resize: none;
-  
+
       @media screen and (min-width: 320px) and (max-height: 967px)
       { margin-top: 8px;
   }
@@ -250,7 +275,7 @@
     font-size: 11px;
   }
   }
-  
+
   .products_form-button {
       margin-top: 32px;
       width: 132px;
@@ -260,11 +285,11 @@
       {
           width: 121px;
   }
-  
+
   @media screen and (min-width: 320px) and (max-height: 967px) {
     margin-top: 20px;
   }
-  
+
   @media screen and (min-width: 320px) and (max-height: 775px) {
     padding: 5px;
     font-size: 11px;
@@ -272,4 +297,3 @@
     width: 90px;
   }
   }
-  

@@ -82,9 +82,26 @@
 
             <form class="buy-now_form">
 
-            <input class="buy-now_form-input-name" type="name" name="name" id="products_name" required placeholder="Name" />
+            <input class="buy-now_form-input-name"
+             type="name"
+             name="text"
+             id="products_name"
+             required
+             placeholder="Name"
+             minlength="3"
+            pattern="^[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+$|^[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+(\s|,)[a-zA-Zа-яА-Яє-їЄ-Ї_\.'-]+$"
+            title="Name should contain at least 3 characters"/>
 
-            <input class="buy-now_form-input-tel" type="tel" name="number" id="products_number" required placeholder="Phone" />
+            <input class="buy-now_form-input-tel"
+            type="tel"
+            name="number"
+            id="products_number"
+            placeholder="Phone"
+            required
+            pattern="[0-9]{12}"
+            minlength="12"
+            maxlength="12"
+            title="Phone number should contain at least 12 number digits"/>
 
             <textarea class="buy-now_form-textarea" name="feedback" rows="5" id="products_comment" placeholder="Comment"></textarea>
 
