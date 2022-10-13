@@ -45,8 +45,9 @@
 
 .big-icecream {
   position: absolute;
-  bottom: -271px;  
+  bottom: -271px;
   left: 32px;
+
   @media screen and (min-width: 768px) {
     bottom: -81px;
     left: 365px;
@@ -128,6 +129,21 @@
 
 .plate_img {
   display: block;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 }
 
 .hero_plate-desc {
@@ -168,6 +184,34 @@
   @media screen and (min-width: 1200px) {
     font-size: 46px;
   }
+
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 }
 
 .places-number_names {
@@ -183,6 +227,33 @@
     font-size: 14px;
     margin-bottom: 16px;
   }
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 }
 
 .btn--hero {
