@@ -1,0 +1,206 @@
+.buy-now_modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 568px;
+    background-color: $burger_close;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    margin: 60px auto;
+}
+
+.buy-now_modal-close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 28px;
+    right: 20px;
+    border: none;
+    background-color: inherit;
+
+   &:hover .buy-now_close-icon {
+        fill: #9CBE8F;
+}
+    &:focus .buy-now_close-icon {
+    fill: #9CBE8F;
+}}
+
+.buy-now_close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $text-bl;
+}
+
+.buy-now_modal--title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #131313;
+    margin-top: 29px;
+    
+    @media screen and (min-width: 768px) 
+    {
+        margin-top: 32px;
+
+}}
+
+.buy-now-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) 
+    {
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 40px;
+}}
+
+
+.buy-now_component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 131px;
+    height: 136px;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 16px;
+    margin-top: 84px;
+
+    @media screen and (min-width: 768px) 
+    {
+        margin-top: 103px;
+}
+}
+
+.buy-now--image-block {
+    position: absolute;
+    top: -45%;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background-color: #9CBE8F;
+    margin-top: 0px;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.block-green {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.block-yellow {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.block-brown {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-green {
+    border: 2px solid #96AF8C;
+    &:hover {
+        background-color: #96AF8C;
+    }
+}
+
+.buy-yellow {
+    border: 2px solid #EFD478;
+    &:hover {
+        background-color: #EFD478;
+    }
+}
+
+.buy-brown {
+    border: 2px solid #D6936D;
+    &:hover {
+        background-color: #D6936D;
+    }
+}
+
+.buy-now_image {
+    position: absolute;
+    bottom: 8px;
+    width: 131px;
+    height: 131px;
+}
+
+.buy-now_name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+// ===================FORM 
+
+.buy-now_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px 32px 20px;
+
+    @media screen and (min-width: 768px) 
+    {
+       padding: 0px 100px 32px 100px;
+}
+}
+
+.buy-now_form-input-name {
+    width: 100%;
+    height: 42px;
+    padding: 0px 10px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+.buy-now_form-input-tel {
+    width: 100%;
+    height: 42px;
+    padding: 0px 10px;
+    margin-top: 16px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+.buy-now_form-textarea {
+    width: 100%;
+    height: 84px;
+    padding: 10px 10px;
+    margin-top: 16px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+}
+
+.buy-now_form-button {
+    margin-top: 32px;
+    width: 132px;
+    padding-left: 36px;
+
+    @media screen and (min-width: 768px) 
+    {
+        width: 121px;
+        padding-left: 32px;
+}
+}
+
