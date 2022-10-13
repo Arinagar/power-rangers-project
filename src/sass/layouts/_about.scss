@@ -10,11 +10,11 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 32px;
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
         margin-bottom: 72px;
 }
-@media screen and (min-width: 1200px) 
+@media screen and (min-width: 1200px)
 {
     margin-bottom: 72px;
 }
@@ -28,12 +28,12 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $text-wh; 
-    @media screen and (min-width: 768px) 
+    color: $text-wh;
+    @media screen and (min-width: 768px)
     {
-        font-size:  34px; 
+        font-size:  34px;
 }
-@media screen and (min-width: 1200px) 
+@media screen and (min-width: 1200px)
 {
     font-size: 36px;
 }
@@ -49,33 +49,33 @@
     text-transform: uppercase;
     color: $text-wh;
 
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 768px)
     {
         margin-bottom: 12px;
         font-size: 22px;
 }
-    
-    @media screen and (min-width: 1200px) 
+
+    @media screen and (min-width: 1200px)
 {
     font-size: 30px;
 }}
 
 .about_container {
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
         display: flex;
         flex-direction:row;
-    }   
+    }
     }
 
 .about_container--box {
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
       width: 50%;
       align-items: flex-start;
       padding: 12px 12px 0px;
     }
-    @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px)
     {
       padding-right: 100px;
       padding-top: 100px;
@@ -90,14 +90,14 @@
     border-radius: 50%;
     background-color: rgba(248, 210, 78, 0.7);
 
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
       width: 330px;
       height: 330px;
       margin-bottom: 0px;
       margin-right: 20px;
     }
-    @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px)
 {
     width: 500px;
     height: 500px;
@@ -111,14 +111,13 @@
     top: 22px;
     width: 278px;
     height: 278px;
-   ;
 
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
       width: 330px;
       height: 330px;
     }
-    @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px)
     {
         width: 500px;
         height: 500px;
@@ -137,27 +136,27 @@
     padding: 0px 24px;
     text-align: center;
 
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
       text-align: start;
       margin-bottom: 8px;
       padding: 0px;
     }
-    @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px)
     {
       font-size: 14px;
-    }   
+    }
 }
 .about_text:first-child {
-    @media screen and (min-width: 1200px) 
+    @media screen and (min-width: 1200px)
     {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
 
 .text-hidden {
-    @media screen and (max-width: 767px) 
+    @media screen and (max-width: 767px)
     {
     display: none;
 }
@@ -166,7 +165,7 @@
 .btn--readmore {
     margin: 20px auto;
 
-    @media screen and (min-width: 768px) 
+    @media screen and (min-width: 768px)
     {
         margin: 48px 0px 0px 0px;
 
