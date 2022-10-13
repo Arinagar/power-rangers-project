@@ -45,15 +45,15 @@
 
 .big-icecream {
   position: absolute;
-  // bottom: 0;  настроить позиционирование для мороженки для каждого экрана
+  bottom: -271px;  
   left: 32px;
   @media screen and (min-width: 768px) {
-    bottom: -56px;
+    bottom: -81px;
     left: 365px;
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: -100px;
+    bottom: -164px;
     left: 550px;
   }
 }
@@ -147,6 +147,7 @@
 .products_arrow.arrow--hero {
   position: static;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .places-number {
