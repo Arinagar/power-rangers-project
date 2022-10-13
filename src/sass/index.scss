@@ -4,21 +4,23 @@
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/btn';
+@import './utils/placeholders';
 
 // BASE
 @import './base/container';
 @import './base/global';
 
+
 // COMPONENTS
-@import './components/modal';
+@import './components/products_modal';
 @import './components/modal-franchise';
 @import './components/modal-locations';
+
 
 // LAYOUTS
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/products';
-@import './layouts/products_modal';
 @import './layouts/about';
 @import './layouts/benefits';
 @import './layouts/gallery';
@@ -26,5 +28,3 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 @import './layouts/mobile-menu';
-@import './layouts/buy-now_modal';
-@import './layouts/modal-vidosik';
