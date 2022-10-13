@@ -57,6 +57,7 @@
   padding: 0 0 0 32px;
   height: 42px;
   display: flex;
+  justify-content: center;
   align-items: center;
   font-family: inherit;
   font-weight: 600;
@@ -98,7 +99,7 @@
 .btn--ourlocations {
   min-width: 196px;
   max-width: 196px;
-  padding-left: 34px;
+  padding-right: 32px;
 }
 
 .btn--buynow {
@@ -109,7 +110,7 @@
 .btn--franchise {
   min-width: 196px;
   max-width: 196px;
-  padding-left: 46px;
+  padding: 0;
   background-color: transparent;
 
   &:hover,

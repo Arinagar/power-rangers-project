@@ -1,7 +1,19 @@
-.form-franchise {
+.modal_info-franchise {
+  @extend %modal_info;
+  margin-bottom: 24px;
+
   @media screen and (min-width: 768px) {
-    width: 368px;
-    margin: auto;
+    margin-bottom: 32px;
+  }
+}
+
+.form-franchise {
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
   }
 }
 
@@ -10,16 +22,15 @@
   border: 1px solid $primary_b-c;
   border-radius: 10px;
   margin-bottom: 12px;
+  width: 100%;
   font-size: 12px;
   line-height: 140%;
-  width: 224px;
   padding: 8px 12px 7px 12px;
 
   @media screen and (min-width: 768px) {
     padding: 11px 16px;
     margin-bottom: 16px;
     font-size: 14px;
-    width: 368px;
     margin-left: auto;
     margin-right: auto;
   }
