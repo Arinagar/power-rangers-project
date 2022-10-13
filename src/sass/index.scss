@@ -9,12 +9,10 @@
 // BASE
 @import './base/container';
 @import './base/global';
-@import './base/modal';
 
 
 // COMPONENTS
 @import './components/products_modal';
-@import './components/modal-about';
 @import './components/modal-franchise';
 @import './components/modal-locations';
 
@@ -30,4 +28,3 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 @import './layouts/mobile-menu';
-
