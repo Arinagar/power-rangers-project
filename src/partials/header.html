@@ -4,21 +4,41 @@
       <a href="#">
         <picture>
           <!-- Desktop screen -->
-          <source media="(min-width: 1200px)"
-            srcset="./images/hero/Logo_lg-@2x_result.png 1x, ./images/hero/Logo_lg-@2x-1_result.png 2x"
-            type="image/png" />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/Logo_lg-@2x_result.png   1x,
+              ./images/hero/Logo_lg-@2x-1_result.png 2x
+            "
+            type="image/png"
+          />
 
           <!-- Tablet screen -->
-          <source media="(min-width: 768px)"
-            srcset="./images/hero/logo_md-@1x_result.png 1x, ./images/hero/logo_md-@1x-1_result.png 2x"
-            type="image/png" />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/logo_md-@1x_result.png   1x,
+              ./images/hero/logo_md-@1x-1_result.png 2x
+            "
+            type="image/png"
+          />
 
           <!-- Mobile screen -->
-          <source media="(max-width: 767px)"
-            srcset="./images/hero/logo_sm-@1x_result.png 1x, ./images/hero/logo_sm-@2x_result.png 2x"
-            type="image/png" />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero/logo_sm-@1x_result.png 1x,
+              ./images/hero/logo_sm-@2x_result.png 2x
+            "
+            type="image/png"
+          />
 
-          <img class="logo" src="./images/hero/logo_sm-@1x_result.png" alt="Logo Icecream" loading="lazy" />
+          <img
+            class="logo"
+            src="./images/hero/logo_sm-@1x_result.png"
+            alt="Logo Icecream"
+            loading="lazy"
+          />
         </picture>
       </a>
       <ul class="header_nav-list">
@@ -27,12 +47,20 @@
         <li><a class="link" href="#products">Our Products</a></li>
         <li><a class="link" href="#contacts">Contact</a></li>
       </ul>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="menu-icon" width="32" height="32">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <button type="button" class="btn btn--buynow header--btn js-open-modal" data-modal="5">
+      <button
+        type="button"
+        class="btn btn--buynow header--btn js-open-modal"
+        data-modal="5"
+      >
         Buy now
         <div class="btn_container">
           <svg class="btn_icon" width="12" height="12">
