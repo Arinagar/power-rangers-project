@@ -1,5 +1,6 @@
-<div class="about_modal container">
-  <h3>How it's made</h3>
+<div class="modal about_modal" data-modal="1">
+  <p class="modal_title">How it's made</h3>
+  <div class="modal-about_video-group">
   <iframe
     class="video"
     src="https://www.youtube.com/embed/nzgltMTokw8"
@@ -13,9 +14,11 @@
     tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
     adipiscing elit, sed do eiusmod tempor incididunt ut labore et
   </p>
-  <button type="button">
-    <svg class="menu-icon" width="32px" height="32px">
+</div>
+  <button type="button" class="modal_button-close">
+    <svg class="modal_close-icon js-modal-close">
       <use href="./images/icons.svg#icon-hrest"></use>
     </svg>
   </button>
 </div>
+<div class="backdrop js-overlay-modal"></div>
