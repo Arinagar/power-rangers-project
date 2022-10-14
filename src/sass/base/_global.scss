@@ -10,7 +10,7 @@ body {
   letter-spacing: normal;
 
   background-position: center;
-  background-size: 30% cover;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-image: url('../images/main_b-c.png');
@@ -20,6 +20,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.page {
+  overflow: hidden;
 }
 
 .section {
