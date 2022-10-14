@@ -2,14 +2,16 @@
   <div class="mobile-nav">
     <a href="#">
       <!-- Tablet screen -->
-      <source media="(min-width: 768px)"
-        srcset="./images/hero/logo_md-@1x_result.png 1x, ./images/hero/logo_md-@1x-1_result.png 2x" type="image/png" />
-
-      <!-- Mobile screen -->
-      <source media="(max-width: 767px)"
-        srcset="./images/hero/logo_sm-@1x_result.png 1x, ./images/hero/logo_sm-@2x_result.png 2x" type="image/png" />
-
-      <img class="logo" src="./images/hero/logo_sm-@1x_result.png" alt="Logo Icecream" loading="lazy" />
+<picture>
+        <source media="(min-width: 768px)"
+          srcset="./images/hero/logo_md-@1x_result.png 1x, ./images/hero/logo_md-@1x-1_result.png 2x" type="image/png" />
+  
+        <!-- Mobile screen -->
+        <source media="(max-width: 767px)"
+          srcset="./images/hero/logo_sm-@1x_result.png 1x, ./images/hero/logo_sm-@2x_result.png 2x" type="image/png" />
+  
+        <img class="logo" src="./images/hero/logo_sm-@1x_result.png" alt="Logo Icecream" loading="lazy" />
+</picture>
     </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu-icon" width="32px" height="32px">
