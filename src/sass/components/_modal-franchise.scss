@@ -37,14 +37,14 @@
 
   &:focus {
     border: 1px solid $card2_b-c;
-}
+  }
 
   &:not(:placeholder-shown):required:invalid {
-      border: 1px solid $border-color-invalid;
+    border: 1px solid $border-color-invalid;
   }
 
   &:not(:placeholder-shown):required:valid {
-      border: 1px solid $border-color-valid;
+    border: 1px solid $border-color-valid;
   }
 }
 

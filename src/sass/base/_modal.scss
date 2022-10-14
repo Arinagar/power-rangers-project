@@ -4,8 +4,8 @@
   opacity: 0;
   pointer-events: none;
   background-color: $background-modal-backdrop;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   width: 100%;
@@ -39,11 +39,9 @@
   }
 
   &:hover,
-  &:focus
-   {
+  &:focus {
     color: $btn-h_f;
   }
-
 }
 
 .modal_close-icon {
@@ -61,28 +59,28 @@
   }
 }
 
-
 .modal_title {
   font-family: 'Seymour One';
   text-align: center;
   font-size: 16px;
-  line-height: calc(24/16);
+  line-height: calc(24 / 16);
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-  font-size: 20px;
-  line-height: calc(28/20);
-  margin-bottom: 32px;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 32px;
   }
 }
 
 .modal_button {
   padding: 12px 34px;
+  justify-content: center;
   margin: auto;
   margin-top: 24px;
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
-    line-height: calc(17/14);
+    line-height: calc(17 / 14);
   }
 }
